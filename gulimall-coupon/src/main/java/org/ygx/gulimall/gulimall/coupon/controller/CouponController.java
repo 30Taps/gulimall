@@ -1,6 +1,8 @@
 package org.ygx.gulimall.gulimall.coupon.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.*;
 import org.ygx.gulimall.common.utils.PageUtils;
 import org.ygx.gulimall.common.utils.R;
@@ -19,11 +21,25 @@ import java.util.Map;
  * @email wudaliujiwang@163.com
  * @date 2022-11-13 14:54:00
  */
+@RefreshScope
 @RestController
 @RequestMapping("coupon/coupon")
 public class CouponController {
     @Autowired
     private CouponService couponService;
+
+    /**
+     * 配置中心测试
+     */
+    @Value("${coupon.user.name}")
+    private String name;
+    @Value("${coupon.user.age}")
+    private Integer age;
+
+    @RequestMapping("/test")
+    public R test(){
+        return R.ok().put("name", name).put("age", age);
+    }
 
     /**
      * 远程调用测试
