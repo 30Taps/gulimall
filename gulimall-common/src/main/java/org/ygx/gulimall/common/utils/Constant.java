@@ -8,9 +8,10 @@
 
 package org.ygx.gulimall.common.utils;
 
-import io.renren.common.validator.group.AliyunGroup;
-import io.renren.common.validator.group.QcloudGroup;
-import io.renren.common.validator.group.QiniuGroup;
+
+import org.ygx.gulimall.common.validator.group.AliyunGroup;
+import org.ygx.gulimall.common.validator.group.QcloudGroup;
+import org.ygx.gulimall.common.validator.group.QiniuGroup;
 
 import java.util.Optional;
 import java.util.stream.Stream;
