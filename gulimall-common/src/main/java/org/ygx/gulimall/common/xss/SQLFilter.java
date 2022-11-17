@@ -8,8 +8,8 @@
 
 package org.ygx.gulimall.common.xss;
 
-import io.renren.common.exception.RRException;
 import org.apache.commons.lang.StringUtils;
+import org.ygx.gulimall.common.exception.RRException;
 
 /**
  * SQL过滤

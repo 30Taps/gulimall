@@ -11,8 +11,8 @@ package org.ygx.gulimall.common.utils;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.core.metadata.OrderItem;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import io.renren.common.xss.SQLFilter;
 import org.apache.commons.lang.StringUtils;
+import org.ygx.gulimall.common.xss.SQLFilter;
 
 import java.util.Map;
 
